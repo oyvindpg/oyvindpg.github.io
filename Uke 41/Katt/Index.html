@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Katt</title>
+    <style>
+        @keyframes catwalk {
+           to {
+               background-position: 0 -2280px;
+           }
+        }
+        @keyframes moveRight {
+            to {
+                transform: translateX(800px);
+            }
+        }
+       .pus {
+        background-image: url(sprite_catwalk.png);
+           width: 400px;
+           height: 190px;
+           animation: catwalk 1s steps(12) infinite;
+        }
+
+        .right {
+            width: 400px;
+            height: 190px;
+            animation: moveRight 4s steps(48) infinite alternate;
+        }
+        #katt1 {animation-delay: 0s}
+        #katt2 {animation-delay: 0.5s}
+        #katt3 {animaiton-delay: 1s}
+        #katt4 {animation-delay: 1.5s}
+    </style>
+</head>
+<body>
+
+<div class="right" id="katt1">
+    <div class="pus"></div>
+</div>
+<div class="right" id="katt2">
+    <div class="pus"></div>
+</div>
+<div class="right" id="katt3">
+    <div class="pus"></div>
+</div>
+<div class="right" id="katt4">
+    <div class="pus"></div>
+</div>
+
+</body>
+</html>

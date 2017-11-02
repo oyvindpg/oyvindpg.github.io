@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lekse uke 43-44</title>
+    <style>
+        .dropbtn {
+            background-color: powderblue;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: powderblue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: solid black 1px;
+        }
+
+        .dropdown-content a:hover {background-color: powderblue}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: hotpink;
+        }
+        a:hover {
+            color: hotpink;
+        }
+        body {
+            background-image: url(background2.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="dropdown">
+    <button class="dropbtn">Oppgaver</button>
+    <div class="dropdown-content">
+        <a href="davidbyrne.html">Eliminating the human</a>
+        <a href="oppgave.html">Oppgaver side 152</a>
+        <a href="oppgaver2.html">Oppgaver side 159</a>
+        <a href="24timeruten.html">24 timer uten</a>
+    </div>
+</div>
+
+</body>
+</html>

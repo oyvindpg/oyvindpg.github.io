@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liverpool FC</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            background-color: red;
+        }
+        nav {
+            background-color: #444059;
+        }
+        nav a {
+            display: inline-block;
+            color: #b4b3bd;
+            padding: 22px 16px 22px 16px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: white;
+        }
+        .active {
+            color: white;
+            border-bottom: 4px solid #444059;
+        }
+        main {
+            overflow: hidden;
+            background-color: white;
+            max-width: 100%;
+            min-height: 100vh;
+            text-align: center;
+        }
+        main > div > div > img {
+            max-width: 100%;
+        }
+        h1 {
+            padding: 0;
+            text-align: center;
+            font-size: 48px;
+        }
+        .dropbtn {
+            background-color: #444059;
+            color: white;
+            padding: 16px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+        .dropbtn:hover {
+            color: white;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: solid black 1px;
+        }
+
+        .dropdown-content a:hover {  color: red;}
+
+        .dropdown:hover .dropdown-content {  display: block;  }
+
+        .dropdown:hover .dropbtn {  background-color: #444059;  }
+
+        main > div > ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 5px;
+            max-width: 100%;
+            text-decoration: none;
+            border: 1px;
+            position: center;
+        }
+
+
+        h2 {    font-size: 28px;    }
+        h3 {    font-size: 28px;    }
+        h4 {    font-size: 28px;    }
+        h5 {    font-size: 28px;    }
+        h6 {    font-size: 28px;    }
+        ul {
+            list-style-type: none;
+        }
+        .number {
+            font-size:22px;
+            min-width:1.9em;
+            padding:.5em .4em
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="http://assets1.lfcimages.com/v2/J-445/lfc/images/logo-125-medium.png">
+</head>
+<body>
+
+<nav>
+    <a href="Index.html">HOME</a>
+    <a href="fixtures.html">LEAGUE TABLE</a>
+    <a href="shop.html">SHOP</a>
+    <a href="history.html">TROPHIES</a>
+    <div class="dropdown">
+        <button class="dropbtn">TEAM</button>
+        <div class="dropdown-content">
+            <a href="team.html">First Team</a>
+            <a href="u21.html">Academy Team</a>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+    <h1>FIRST TEAM</h1>
+
+    <div>
+        <div>
+            <img src="../Bilder/liverpool.png"/>
+        </div>
+    </div>
+    <nav>
+        <a class="active" href="team.html">FIRST TEAM</a>
+        <a href="u21.html">ACADEMY</a>
+    </nav>
+    <div>
+        <h2>Goalkeepers</h2>
+        <ul>
+            <li>
+                <img src="../Spillere/loris-karius.jpeg" width="120" height="120">
+                <div class="number">1</div>
+                <div>Loris Karius</div>
+            </li>
+            <li>
+                <img src="../Spillere/simon-mignolet.jpeg" width="120" height="120">
+                <div class="number">22</div>
+                <div>Simon Mignolet</div>
+            </li>
+            <li>
+                <img src="../Spillere/adam-bogdan.jpeg" width="120" height="120">
+                <div class="number">34</div>
+                <div>Adam Bogdan</div>
+            </li>
+            <li>
+                <img src="../Spillere/danny-ward.jpeg" width="120" height="120">
+                <div class="number">52</div>
+                <div>Danny Ward</div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Defenders</h3>
+        <ul>
+            <li>
+                <img src="../Spillere/nathaniel-clyne.jpeg" width="120" height="120">
+                <div class="number">2</div>
+                <div>Nathaniel Clyne</div>
+            </li>
+            <li>
+                <img src="../Spillere/van_dijk.jpeg" width="120" height="120">
+                <div class="number">4</div>
+                <div>Virgil Van Dijk</div>
+            </li>
+            <li>
+                <img src="../Spillere/dejan-lovren.jpeg" width="120" height="120">
+                <div class="number">6</div>
+                <div>Dejan Lovren</div>
+            </li>
+            <li>
+                <img src="../Spillere/joe-gomez.jpeg" width="120" height="120">
+                <div class="number">12</div>
+                <div>Joe Gomez</div>
+            </li>
+            <li>
+                <img src="../Spillere/ragnar-klavan.jpeg" width="120" height="120">
+                <div class="number">17</div>
+                <div>Ragnar Klavan</div>
+            </li>
+            <li>
+                <img src="../Spillere/alberto-moreno.jpeg" width="120" height="120">
+                <div class="number">18</div>
+                <div>Alberto Moreno</div>
+            </li>
+            <li>
+                <img src="../Spillere/andy-robertson.jpeg" width="120" height="120">
+                <div class="number">26</div>
+                <div>Andy Robertson</div>
+            </li>
+            <li>
+                <img src="../Spillere/joel-matip.jpeg" width="120" height="120">
+                <div class="number">36</div>
+                <div>Joel Matip</div>
+            </li>
+            <li>
+                <img src="../Spillere/jon-flanagan.jpeg" width="120" height="120">
+                <div class="number">38</div>
+                <div>Jon Flanagan</div>
+            </li>
+            <li>
+                <img src="../Spillere/trentalexander-arnold.jpeg" width="120" height="120">
+                <div class="number">66</div>
+                <div>Trent Alexander-Arnold</div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>Midfielders</h4>
+        <ul>
+            <li>
+                <img src="../Spillere/gini-wijnaldum.jpeg" width="120" height="120">
+                <div class="number">5</div>
+                <div>Georginio Wijnaldum</div>
+            </li>
+            <li>
+                <img src="../Spillere/james-milner.jpeg" width="120" height="120">
+                <div class="number">7</div>
+                <div>James Milner</div>
+            </li>
+            <li>
+                <img src="../Spillere/philippe-coutinho.jpeg" width="120" height="120">
+                <div class="number">10</div>
+                <div>Philippe Coutinho</div>
+            </li>
+            <li>
+                <img src="../Spillere/jordan-henderson.jpeg" width="120" height="120">
+                <div class="number">14</div>
+                <div>Jordan Henderson</div>
+            </li>
+            <li>
+                <img src="../Spillere/marko-grujic.jpeg" width="120" height="120">
+                <div class="number">16</div>
+                <div>Marko Grujic</div>
+            </li>
+            <li>
+                <img src="../Spillere/adam-lallana.jpeg" width="120" height="120">
+                <div class="number">20</div>
+                <div>Adam Lallana</div>
+            </li>
+            <li>
+                <img src="../Spillere/ox-chamberlain.jpeg" width="120" height="120">
+                <div class="number">21</div>
+                <div>Alex Oxlade-Chamberlain</div>
+            </li>
+            <li>
+                <img src="../Spillere/emre-can.jpeg" width="120" height="120">
+                <div class="number">23</div>
+                <div>Emre Can</div>
+            </li>
+            <li>
+                <img src="../Spillere/lazar-markovic.jpeg" width="120" height="120">
+                <div class="number">50</div>
+                <div>Lazar Markovic</div>
+            </li>
+            <li>
+                <img src="../Spillere/ovie-elajira.jpeg" width="120" height="120">
+                <div class="number">53</div>
+                <div>Ovie Elajira</div>
+            </li>
+            <li>
+                <img src="../Spillere/harry-wilson.jpeg" width="120" height="120">
+                <div class="number">59</div>
+                <div>Harry Wilson</div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h5>Attackers</h5>
+        <ul>
+            <li>
+                <img src="../Spillere/roberto-firmino.jpeg" width="120" height="120">
+                <div class="number">9</div>
+                <div>Roberto Firmino</div>
+            </li>
+            <li>
+                <img src="../Spillere/mohamed-salah.jpeg" width="120" height="120">
+                <div class="number">11</div>
+                <div>Mohamed Salah</div>
+            </li>
+            <li>
+                <img src="../Spillere/daniel-sturridge.jpeg" width="120" height="120">
+                <div class="number">15</div>
+                <div>Daniel Sturridge</div>
+            </li>
+            <li>
+                <img src="../Spillere/sadio-mane.jpeg" width="120" height="120">
+                <div class="number">19</div>
+                <div>Sadio Mane</div>
+            </li>
+            <li>
+                <img src="../Spillere/danny-ings.jpeg" width="120" height="120">
+                <div class="number">28</div>
+                <div>Danny Ings</div>
+            </li>
+            <li>
+                <img src="../Spillere/dominik-solanke.jpeg" width="120" height="120">
+                <div class="number">29</div>
+                <div>Dominik Solanke</div>
+            </li>
+            <li>
+                <img src="../Spillere/ben-woodburn.jpeg" width="120" height="120">
+                <div class="number">58</div>
+                <div>Ben Woodburn</div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="../Nettside/shop.html">
+                <img border="0" alt="ikon1" src="../Bilder/ikon11.png" width="100" height="100">
+            </a>
+        </p>
+        <p>
+            <a href="../Nettside/fixtures.html">
+                <img border="0" alt="ikon2" src="../Bilder/ikon2.png" width="100" height="100">
+            </a>
+        </p>
+        <p>
+            <a href="../Nettside/history.html">
+                <img border="0" alt="ikon3" src="../Bilder/ikon3.png" width="100" height="100">
+            </a>
+        </p>
+    </div>
+</main>
+
+
+
+</body>
+</html>

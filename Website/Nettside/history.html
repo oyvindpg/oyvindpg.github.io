@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liverpool FC</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+        }
+        nav {
+            background-color: #444059;
+        }
+        nav a {
+            display: inline-block;
+            color: #b4b3bd;
+            font-family: "Open sans", Helvetica, Arial, sans-serif;
+            padding: 22px 16px 22px 16px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: white;
+        }
+        .active {
+            color: white;
+            border-bottom: 4px solid maroon;
+
+        }
+        .dropbtn {
+            background-color: #444059;
+            color: white;
+            padding: 16px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            color: #b4b3bd;
+        }
+        .dropbtn:hover {
+            color: white;
+        }
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: solid black 1px;
+        }
+
+        .dropdown-content a:hover {  color: white;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #444059;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        main > div > ul {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 5px;
+            max-width: 100%;
+            text-decoration: none;
+            border: 1px;
+            position: center;
+        }
+        ul {
+            list-style-type: none;
+        }
+        body > main > h1 {
+            font-size: 28px;
+            text-align: center;
+            padding: 0;
+        }
+        body > main > li > img {
+            text-align: center;
+        }
+        body > main > ul > li {
+            text-align: center;
+        }
+        body > main > ul > li > div {
+            font-size: 18px;
+        }
+        p {
+            color: white;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="http://assets1.lfcimages.com/v2/J-445/lfc/images/logo-125-medium.png">
+</head>
+<body>
+<nav>
+    <a href="Index.html">HOME</a>
+    <a href="fixtures.html">LEAGUE TABLE</a>
+    <a href="shop.html">SHOP</a>
+    <a class="active" href="history.html">TROPHIES</a>
+    <div class="dropdown">
+        <button class="dropbtn">TEAM</button>
+        <div class="dropdown-content">
+            <a href="team.html">First Team</a>
+            <a href="u21.html">Academy Team</a>
+        </div>
+    </div>
+</nav>
+<main>
+    <h1>TROPHIES</h1>
+    <ul>
+        <li>
+            <img src="../Bilder/epl-trophy.png" width="120" height="120">
+            <div>League Champions (18)</div>
+            <div>1900-01, 1905-06, 1921-22, 1922-23, 1946-47, 1963-64,</div>
+            <div>1965-66,1972-73, 1975-76, 1976-77, 1978-79, 1979-80,</div>
+            <div>1981-82, 1982-83, 1983-84, 1985-86, 1987-88, 1989-90</div>
+        </li>
+        <li>
+            <img src="../Bilder/cl-trophy.png" width="120" height="120">
+            <div>UEFA Champions League (5)</div>
+            <div>1976-77, 1977-78, 1980-81, 1983-84, 2004-05</div>
+        </li>
+        <li>
+            <img src="../Bilder/fa-trophy.png" width="120" height="120">
+            <div>FA Cup (7)</div>
+            <div>1964-65, 1973-74, 1985-86, 1988-89, 1991-92, 2000-01, 2005-06</div>
+        </li>
+        <li>
+            <img src="../Bilder/leaguecup-trophy.jpg" width="120" height="120">
+            <div>League Cup (8)</div>
+            <div>1980-81, 1981-82, 1982-83, 1983-84, 1994-95, 2000-01, 2002-03, 2011-12</div>
+        </li>
+        <li>
+            <img src="../Bilder/europaleague-trophy.png" width="120" height="120">
+            <div>Europa League (3)</div>
+            <div>1972-73, 1975-76, 2000-01</div>
+        </li>
+        <li>
+            <img src="../Bilder/supercup-trophy.jpg" width="120" height="120">
+            <div>UEFA Supercup (3)</div>
+            <div>1977, 2001, 2005</div>
+        </li>
+        <li>
+            <img src="../Bilder/shieldcup-troph.png" width="120" height="120">
+            <div>Charity Shield Cup (15)</div>
+            <div>1964, 1965, 1966, 1974, 1976, 1977, 1979, 1980, 1982, 1986, 1988, 1989, 1990, 2001, 2006,</div>
+        </li>
+        <li>
+            <img src="../Bilder/youthcup-trophy.jpeg" width="120" height="120">
+            <div>FA Youth Cup (3)</div>
+            <div>1996, 2006, 2007</div>
+        </li>
+        <li>
+        <p>filler</p>
+            <p>filler</p>
+            <p>filler</p>
+            <p>filler</p>
+            <p>filler</p>
+        </li>
+    </ul>
+</main>
+<div class="footer">
+    <p>
+        <a href="../Nettside/shop.html">
+            <img border="0" alt="ikon1" src="../Bilder/ikon11.png" width="100" height="100">
+        </a>
+    </p>
+    <p>
+        <a href="../Nettside/fixtures.html">
+            <img border="0" alt="ikon2" src="../Bilder/ikon2.png" width="100" height="100">
+        </a>
+    </p>
+    <p>
+        <a href="../Nettside/history.html">
+            <img border="0" alt="ikon3" src="../Bilder/ikon3.png" width="100" height="100">
+        </a>
+    </p>
+</div>
+</body>
+</html>

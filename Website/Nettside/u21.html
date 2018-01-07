@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liverpool FC</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            background-color: red;
+        }
+        nav {
+            background-color: #444059;
+        }
+        nav a {
+            display: inline-block;
+            color: #b4b3bd;
+            padding: 22px 16px 22px 16px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: white;
+        }
+        .active {
+            color: white;
+            border-bottom: 4px solid #444059;
+        }
+        main {
+            overflow: hidden;
+            background-color: white;
+            max-width: 100%;
+            min-height: 100vh;
+            text-align: center;
+        }
+        main > div > div > img {
+            max-width: 100%;
+        }
+        h1 {
+            padding: 0;
+            text-align: center;
+            font-size: 48px;
+        }
+        .dropbtn {
+            background-color: #444059;
+            color: white;
+            padding: 16px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+        .dropbtn:hover {
+            color: white;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border: solid black 1px;
+        }
+
+        .dropdown-content a:hover {  color: red;}
+
+        .dropdown:hover .dropdown-content {  display: block;  }
+
+        .dropdown:hover .dropbtn {  background-color: #444059;  }
+
+        main > div > ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 5px;
+            max-width: 100%;
+            text-decoration: none;
+            border: 1px;
+            position: center;
+        }
+
+
+        h2 {    font-size: 28px;    }
+        h3 {    font-size: 28px;    }
+        h4 {    font-size: 28px;    }
+        h5 {    font-size: 28px;    }
+        h6 {    font-size: 28px;    }
+        ul {
+            list-style-type: none;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="http://assets1.lfcimages.com/v2/J-445/lfc/images/logo-125-medium.png">
+</head>
+<body>
+
+<nav>
+    <a href="Index.html">HOME</a>
+    <a href="fixtures.html">LEAGUE TABLE</a>
+    <a href="shop.html">TICKETS</a>
+    <a href="history.html">TROPHIES</a>
+    <div class="dropdown">
+        <button class="dropbtn">TEAM</button>
+        <div class="dropdown-content">
+            <a href="team.html">First Team</a>
+            <a href="u21.html">Academy Team</a>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+    <h1>ACADEMY TEAM</h1>
+
+    <div>
+        <div>
+            <img src="../Bilder/academy.png"/>
+        </div>
+    </div>
+    <nav>
+        <a class="active" href="team.html">FIRST TEAM</a>
+        <a href="u21.html">ACADEMY</a>
+    </nav>
+    <div>
+        <h2>Goalkeepers</h2>
+        <ul>
+            <li>
+                <img src="../Bilder/u21/caoimhin-kelleher.jpeg" width="131.5" height="200">
+                <div>Caoimhin Kelleher</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/andrew-firth.jpeg" width="131.5" height="200">
+                <div>Andrew Firth</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/kamil-grabara.jpeg" width="131.5" height="200">
+                <div>Kamil Grabara</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/ben-williams.jpeg" width="131.5" height="200">
+                <div>Ben Williams</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/daniel-atherson.jpeg" width="131.5" height="200">
+                <div>Daniel Atherton</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/viteslav-jones.jpeg" width="131.5" height="200">
+                <div>Viteslav Jaros</div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Defenders</h3>
+        <ul>
+            <li>
+                <img src="../Bilder/u21/lloyd-jones.jpeg" width="131.5" height="200">
+                <div>Lloyd Jones</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/conor-masterson.jpeg" width="131.5" height="200">
+                <div>Conor Masterson</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/george-johnston.jpeg" width="131.5" height="200">
+                <div>George Johnston</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/michel-paker.jpeg" width="131.5" height="200">
+                <div>Mich'el Parker</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/adam-lewis.jpeg" width="131.5" height="200">
+                <div>Adam Lewis</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/anthony-glennon.jpeg" width="131.5" height="200">
+                <div>Anthony Glennon</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/nathaniel-phillips.jpeg" width="131.5" height="200">
+                <div>Nathaniel Phillips</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/juanma.jpeg" width="131.5" height="200">
+                <div>Juanma</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/tom-clayton.jpeg" width="131.5" height="200">
+                <div>Tom Clayton</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/rhys-williams.jpeg" width="131.5" height="200">
+                <div>Rhys Williams</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/neco-williams.jpeg" width="131.5" height="200">
+                <div>Neco Williams</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/morgan-boyes.jpeg" width="131.5" height="200">
+                <div>Morgan Boyes</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/alex-turner.jpeg" width="131.5" height="200">
+                <div>Alex Turner</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/patrik-raitanen.jpeg" width="131.5" height="200">
+                <div>Patrik Raitanen</div>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>Midfielders</h4>
+        <ul>
+            <li>
+                <img src="../Bilder/u21/cameron-brannagan.jpeg" width="131.5" height="200">
+                <div>Cameron Brannagan</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/paulo-alves.jpeg" width="131.5" height="200">
+                <div>Paulo Alves</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/bobby-abekanye.jpeg" width="131.5" height="200">
+                <div>Bobby Abekanye</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/herbie-kane.jpeg" width="131.5" height="200">
+                <div>Herbie Kane</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/matthew-virtue.jpeg" width="131.5" height="200">
+                <div></div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/harvey-whyte.jpeg" width="131.5" height="200">
+                <div>Harvey Whyte</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/jordan-hunter.jpeg" width="131.5" height="200">
+                <div>Jordan Hunter</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/liam-coyle.jpeg" width="131.5" height="200">
+                <div>Liam Coyle</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/marley-blair.jpeg" width="131.5" height="200">
+                <div>Marley Blair</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/rafael-camacho.jpeg" width="131.5" height="200">
+                <div>Rafael Camacho</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/abdi-sharif.jpeg" width="131.5" height="200">
+                <div>Abdi Sharif</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/edvard-tagseth.jpeg" width="131.5" height="200">
+                <div>Edvard Tagseth</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/luis-longstaff.jpeg" width="131.5" height="200">
+                <div>Luis Longstaff</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/elijah-dixer-bonner.jpeg" width="131.5" height="200">
+                <div>Elijah Dixer-Bonner</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/curtis-jones.jpeg" width="131.5" height="200">
+                <div>Curtis Jones</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/yasser-larouci.jpeg" width="131.5" height="200">
+                <div>Yasser Larouci</div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h5>Attackers</h5>
+        <ul>
+            <li>
+                <img src="../Bilder/u21/yan-dhanda.jpeg" width="131.5" height="200">
+                <div>Yan Dhanda</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/rhian-brewster.jpeg" width="131.5" height="200">
+                <div>Rhian Brewster</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/glen-mcauley.jpeg" width="131.5" height="200">
+                <div>Glen McAuley</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/liam-millar.jpeg" width="131.5" height="200">
+                <div>Liam Millar</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/okera-simmonds.jpeg" width="131.5" height="200">
+                <div>Okera Simmonds</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/paul-glatzel.jpeg" width="131.5" height="200">
+                <div>Paul Glatzel</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/dan-griffiths.jpeg" width="131.5" height="200">
+                <div>Dan Griffiths</div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h6>Loaned Out</h6>
+        <ul>
+            <li>
+                <img src="../Bilder/u21/jordan-williams.jpeg" width="131.5" height="200">
+                <div>Jordan Williams</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/shamal-george.jpeg" width="131.5" height="200">
+                <div>Shamal George</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/corey-whelan.jpeg" width="131.5" height="200">
+                <div>Corey Whelan</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/toni-gomes.jpeg" width="131.5" height="200">
+                <div>Toni Gomes</div>
+            </li>
+            <li>
+                <img src="../Bilder/u21/brooks-lennon.jpeg" width="131.5" height="200">
+                <div>Brooks Lennon</div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="../Nettside/shop.html">
+                <img border="0" alt="ikon1" src="../Bilder/ikon11.png" width="100" height="100">
+            </a>
+        </p>
+        <p>
+            <a href="../Nettside/fixtures.html">
+                <img border="0" alt="ikon2" src="../Bilder/ikon2.png" width="100" height="100">
+            </a>
+        </p>
+        <p>
+            <a href="../Nettside/history.html">
+                <img border="0" alt="ikon3" src="../Bilder/ikon3.png" width="100" height="100">
+            </a>
+        </p>
+    </div>
+</main>
+
+
+
+</body>
+</html>
